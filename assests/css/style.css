@@ -4,13 +4,19 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     background-color: darkgoldenrod; 
 }
 
 main {
     background-color: rgb(131, 71, 186);
-  
+    flex: 1 0 auto;
 }
 
 footer {
