@@ -82,7 +82,18 @@ main {
 
 footer {
     background-color: darkgoldenrod;
-    
+    font-family: "Caveat", cursive;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: larger;
+    letter-spacing: 2px;
+    color: black;
+    letter-spacing: 4px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* media query for tables and larger displays */
@@ -111,5 +122,10 @@ footer {
     }
     main {
         margin-top: 128px;
+    }
+}
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: black;
     }
 }
