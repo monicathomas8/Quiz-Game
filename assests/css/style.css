@@ -16,6 +16,9 @@ body {
 header {
     background-color: darkgoldenrod; 
 }
+h1 {
+    font-family: "Long Cang", cursive;
+}
 
 main {
     background-color: rgb(131, 71, 186);
