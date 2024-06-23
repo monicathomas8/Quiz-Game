@@ -48,6 +48,17 @@ h1 {
     border-bottom: 1px solid black;
 }
 
+nav {
+    position: absolute;
+    background-color: darkgoldenrod;
+    padding: 01rem;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 2px  #3a3a3a;
+    display: none;
+}
+/* need to add toogle for the nav bar*/ 
+
 main {
     background-color: rgb(131, 71, 186);
     flex: 1 0 auto;
@@ -56,4 +67,22 @@ main {
 footer {
     background-color: darkgoldenrod;
     
+}
+
+/* media query for tables and larger displays */
+@media screen and (min-width: 768px) {
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
 }
