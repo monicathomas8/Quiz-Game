@@ -61,7 +61,7 @@ nav {
     display: none;
     top: 100%;
 }
-/* need to add toogle for the nav bar*/ 
+
 #nav-toogle:checked~nav {
     display: block;
 }
@@ -77,6 +77,7 @@ nav {
 main {
     background-color: rgb(131, 71, 186);
     flex: 1 0 auto;
+    margin-top: 70px;
 }
 
 footer {
@@ -98,6 +99,17 @@ footer {
     }
 
     #menu > li {
-        padding-left: 1rem;
+        padding-left: 2rem;
+    }
+    .nav-toogle-label {
+        display: none;
+    }
+    #logo {
+        font-size: 280%;
+        line-height: 80px;
+        margin: 0 0.5rem;
+    }
+    main {
+        margin-top: 128px;
     }
 }
