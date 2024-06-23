@@ -98,11 +98,14 @@ main {
     background-color: rgba(145, 85, 202, 0.589);
     font-size: 130%;
     position: absolute;
-    width: 80%;
+    bottom: 40%;
+    width: 100%;
     min-height: 200px;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: center;
+    color: azure;
 }
 
 #cover-text > h2, #cover-text > h3 {
