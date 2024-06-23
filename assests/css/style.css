@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Long+Cang&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -8,6 +10,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: "Caveat", cursive;
 }
 
 header {
