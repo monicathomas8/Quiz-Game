@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Caveat", cursive;
-    color: #3a3a3a;
+    color: black;
 }
 
 header {
@@ -23,8 +23,29 @@ header {
     box-shadow: 0 2px 2px  #3a3a3a;
 
 }
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
 h1 {
     font-family: "Long Cang", cursive;
+    letter-spacing: 2px;
+    color: black;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid black;
 }
 
 main {
