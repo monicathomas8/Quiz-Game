@@ -11,10 +11,17 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Caveat", cursive;
+    color: #3a3a3a;
 }
 
 header {
-    background-color: darkgoldenrod; 
+    background-color: darkgoldenrod;
+    padding: 01rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px  #3a3a3a;
+
 }
 h1 {
     font-family: "Long Cang", cursive;
