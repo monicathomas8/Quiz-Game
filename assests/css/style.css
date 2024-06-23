@@ -14,6 +14,13 @@ body {
     color: black;
 }
 
+h1, h2, h3 {
+    font-family: "Long Cang", cursive;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+}
+
 header {
     background-color: darkgoldenrod;
     padding: 01rem;
@@ -75,9 +82,32 @@ nav {
 }
 
 main {
-    background-color: rgb(131, 71, 186);
+    
     flex: 1 0 auto;
     margin-top: 70px;
+}
+
+#sofa {
+    height: 600px;
+    width: 100%;
+    background: url("../css/images/centralperk.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text {
+    background-color: rgba(145, 85, 202, 0.589);
+    font-size: 130%;
+    position: absolute;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: azure;
+   
 }
 
 footer {
@@ -89,6 +119,7 @@ footer {
     letter-spacing: 2px;
     color: black;
     letter-spacing: 4px;
+    color: black;
 }
 
 footer a {
@@ -121,11 +152,16 @@ footer a {
         margin: 0 0.5rem;
     }
     main {
-        margin-top: 128px;
+        margin-top: 194px;
     }
 }
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: black;
+    }
+}
+@media screen and (min-width: 848px)  {
+    main {
+        margin-top: 128px;
     }
 }
