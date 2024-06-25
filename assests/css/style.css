@@ -113,7 +113,7 @@ main {
     color: azure;  
 }
 
-#hall-of-fame {
+.hall-of-fame {
     background-color: darkgoldenrod;
     font-size: 140%;
     color: black;
@@ -128,7 +128,7 @@ main {
     letter-spacing: 4px;
 }
 
-#hall-of-fame > table {
+.hall-of-fame > table {
     text-align: center;
     font-weight: 700;
     word-spacing: 10px;
