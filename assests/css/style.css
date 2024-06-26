@@ -139,6 +139,28 @@ main {
 
 }
 
+.start-button {
+    height: 55px;
+    width: 190px;
+    padding: auto;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 2 2 10px rgb(187, 171, 131);
+    font-size: 16px;
+    background-color: rgb(187, 171, 131);
+    color: black;
+    font-weight: 700;
+    align-items: center;
+    display: block;
+    margin: auto;
+    justify-content: center;
+}
+
+.start-button:hover {
+    background-color: white;
+}
+
+
 footer {
     background-color: darkgoldenrod;
     font-family: "Caveat", cursive;
