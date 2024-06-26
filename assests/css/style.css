@@ -186,7 +186,7 @@ footer a {
 }
 @media screen and (min-width: 992px) {
     #menu a:hover {
-        border-bottom: black;
+        color: white;
     }
 }
 @media screen and (min-width: 848px)  {
