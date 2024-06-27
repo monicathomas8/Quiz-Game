@@ -203,7 +203,6 @@ function check(selectedAnswerIndex) {
         showQuestion();
         showAnswers();
     } else {
-        clearInterval(timerInterval); // Stop the timer at the end of the quiz
         alert("Quiz over!");
         // You can add more actions here, like showing the final score or restarting the quiz
     }
