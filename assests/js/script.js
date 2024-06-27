@@ -120,21 +120,23 @@ function startGame() {
         // Start the timer
         startTimer();
     }
-
+function youLose(){
+    clearInterval(timerInterval);
+    window.location.href="rules.html";
+}
 
 // Function to end the game
 function endGame() {
     alert("See ya soon!!");
     console.log("Left game");
-    // Stop the timer
-    clearInterval(timerInterval);
     window.location.href = "feedback.html";
 }
 
 // Function to start the timer
 function startTimer() {
-    let timeLimit = 300; // Time limit in seconds (5 minutes)
+    let timeLimit = 210;
     const timerDisplay = document.getElementById("timer");
+    console.time("answer time");
 
     // Display initial timer value
     timerDisplay.textContent = formatTime(timeLimit);
@@ -148,7 +150,7 @@ function startTimer() {
         if (timeLimit <= 0) {
             clearInterval(timerInterval);
             alert("Time's up!");
-            endGame(); // End the game when time is up
+            youLose(); // End the game when time is up
         }
     }, 1000); // Update every second (1000 milliseconds)
 }
@@ -194,14 +196,8 @@ function check(selectedAnswerIndex) {
     if (selectedAnswerKey === currentQuestion.correctAnswer) {
         alert("Correct!");
     } else {
-        alert("Wrong!");
-        wrongAnswers++;
-        // End game if wrong answers reach 2
-        if (wrongAnswers = 2) {
-            clearInterval(countdown);
-            endGame();
-            return;
-        }
+        alert("Sorry, you've been bamboozled!");
+        youLose();  
     }
 
     // Move to the next question or end the quiz
@@ -210,15 +206,13 @@ function check(selectedAnswerIndex) {
         showQuestion();
         showAnswers();
     } else {
-        alert("Quiz over!");
+        alert("Woohoo! you did it!");
+        console.timeLog("answer time");
         // You can add more actions here, like showing the final score or restarting the quiz
     }
+    
 }
 
-// Event listener for the "I'm Ready" button
 document.getElementById("btns").addEventListener("click", createName);
-
-// Event listener for the "Quit" button
 document.getElementById("btnl").addEventListener("click", endGame);
 
-document.getElementById("pp").addEventListener()
