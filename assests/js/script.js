@@ -1,24 +1,6 @@
 
-
-function startGame() {   
-   let doc =  prompt("Whats your name?");
-    console.log("player is ready");
-    if (doc != null){
-        document.getElementById("pp").innerHTML = "Hello " + doc +", lets get started!";
-    }
-}
-
 let start = document.getElementById("btns");
-start.addEventListener('click', startGame);
-
-function endGame() {
-    alert ("See ya soon!!");
-    console.log("left game");
-    window.location.href ="feedback.html";
-}
-
 let end = document.getElementById("btnl");
-end.addEventListener('click', endGame);
 
 var myQuestions = [
     {
@@ -355,6 +337,35 @@ var myQuestions = [
         correctAnswer: 'b'
     },
 ]
+// Current question index
+let currentQuestionIndex = 0;
+
+// Function to start the game
+function startGame() {
+    let name = prompt("What's your name?");
+    console.log("Player is ready");
+    if (name != null) {
+        document.getElementById("pp").innerHTML = "Hello " + name + ", let's get started!";
+        // Start the quiz
+        startQuiz();
+    }
+}
+
+// Function to end the game
+function endGame() {
+    alert("See ya soon!!");
+    console.log("Left game");
+    window.location.href = "feedback.html";
+}
+
+// Function to start the quiz
+function startQuiz() {
+    // Show the first question
+    showQuestion();
+    // Show the answers for the first question
+    showAnswers();
+}
+
 // Function to display the current question
 function showQuestion() {
     const questionElement = document.getElementById("question");
@@ -369,21 +380,24 @@ function showAnswers() {
     const answerButtons = document.querySelectorAll("#answers button");
     const currentQuestion = myQuestions[currentQuestionIndex];
     
-    // Display the answer options
-    let answerKeys = Object.keys(currentQuestion.answers);
+    // Get answer options
+    const answers = Object.values(currentQuestion.answers);
+
+    // Display the answer options in buttons
     answerButtons.forEach((button, index) => {
-        button.textContent = currentQuestion.answers[answerKeys[index]];
-        button.disabled = false;
+        button.textContent = answers[index];
+        button.disabled = false; // Enable the button
     });
 }
 
 // Function to check the selected answer
 function check(selectedAnswerIndex) {
     const currentQuestion = myQuestions[currentQuestionIndex];
-    let answerKeys = Object.keys(currentQuestion.answers);
-    
+    const answerKeys = Object.keys(currentQuestion.answers);
+    const selectedAnswerKey = answerKeys[selectedAnswerIndex];
+
     // Check if the selected answer is correct
-    if (answerKeys[selectedAnswerIndex] === currentQuestion.correctAnswer) {
+    if (selectedAnswerKey === currentQuestion.correctAnswer) {
         alert("Correct!");
     } else {
         alert("Wrong!");
