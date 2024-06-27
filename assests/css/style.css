@@ -88,7 +88,7 @@ main {
 }
 
 .sofa {
-    height: 600px;
+    height:fit-content;
     width: 100%;
     background: url("../css/images/centralperk.jpg") no-repeat center center/cover;
     position: relative;
@@ -96,36 +96,40 @@ main {
 
 .cover-text {
     background-color: rgba(145, 85, 202, 0.589);
-    font-size: 130%;
-    position: absolute;
+    font-size: 120%;
+    position: relative;
+    text-transform: uppercase;
     bottom: 40%;
     width: 100%;
-    min-height: 200px;
+    min-height:auto;
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
     color: azure;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 }
 
 .cover-text > h2, .cover-text > h3 {
-    color: azure;  
+    color: azure;
+    padding: 20px;
 }
 
 .hall-of-fame {
     background-color: darkgoldenrod;
     font-size: 140%;
+    font-weight: 700;
     color: black;
-    position: absolute;
+    position: relative;
     bottom: 40%;
     width: 100%;
-    min-height: 200px;
+    min-height: auto;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: center;
     letter-spacing: 4px;
+    text-transform: uppercase;
 }
 
 .hall-of-fame > table {

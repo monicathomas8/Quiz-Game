@@ -1,19 +1,16 @@
 
 
-function first() {
-    let srt = document.getElementById("btns");
-    srt.addEventListener('click', createName);
+function startGame() {   
+   let doc =  prompt("Whats your name?");
+    console.log("player is ready");
+    if (doc != null){
+        document.getElementById("pp").innerHTML = "Hello " + doc +", lets get started!";
+    }
 
 }
 
-function createName() {
-    let name = prompt("Please create a username")
-    console.log("Hi + name + !");
-}
-
-function startGame() {
-    
-}
+let start = document.getElementById("btns");
+start.addEventListener('click', startGame);
 
 function endGame() {
     alert ("See ya soon!!");
