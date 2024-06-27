@@ -20,43 +20,6 @@ function endGame() {
 let end = document.getElementById("btnl");
 end.addEventListener('click', endGame);
 
-function displayRandomQuestion() {
-    // Get a random question from the array
-    let randomIndex = Math.floor(Math.random() * myQuestions.length);
-    let question = myQuestions[randomIndex];
-
-    // Get the question and answer elements
-    let questionContainer = document.getElementById("question");
-    let answerContainer = document.getElementById("answers");
-
-    // Display the question
-    questionContainer.innerHTML = question.question;
-
-    // Clear previous answers
-    answerContainer.innerHTML = '';
-
-    // Display the answer options
-    for (let key in question.answers) {
-        let answerButton = document.createElement("button");
-        answerButton.classList.add("answer-button");
-        answerButton.innerHTML = question.answers[key];
-        answerButton.onclick = function() {
-            checkAnswer(key, question.correctAnswer);
-        };
-        answerContainer.appendChild(answerButton);
-    }
-}
-
-// Function to check the answer
-function checkAnswer(selected, correct) {
-    if (selected === correct) {
-        alert("Correct!");
-    } else {
-        alert("Wrong!");
-    }
-    displayRandomQuestion(); // Display another random question
-}
-
 var myQuestions = [
     {
         question : "what are the names of Ross and Monica's parents?",
@@ -392,4 +355,54 @@ var myQuestions = [
         correctAnswer: 'b'
     },
 ]
-    
+// Function to pull a random question and display it
+function displayRandomQuestion() {
+    // Get a random question from the array
+    let randomIndex = Math.floor(Math.random() * myQuestions.length);
+    let question = myQuestions[randomIndex];
+
+    // Get the question and answer elements
+    let questionContainer = document.getElementById("question");
+    let answerButtons = [
+        document.getElementById("answer-one"),
+        document.getElementById("answer-two"),
+        document.getElementById("answer-three")
+    ];
+
+    // Display the question
+    questionContainer.innerHTML = question.question;
+
+    // Get the answers
+    let answers = Object.values(question.answers);
+
+    // Display the answer options as buttons
+    for (let i = 0; i < answerButtons.length; i++) {
+        answerButtons[i].innerHTML = answers[i];
+        answerButtons[i].disabled = false;
+        answerButtons[i].setAttribute("data-correct", answers[i] === question.answers[question.correctAnswer]);
+    }
+}
+
+// Function to check the answer
+function check(answerIndex) {
+    let answerButtons = [
+        document.getElementById("answer-one"),
+        document.getElementById("answer-two"),
+        document.getElementById("answer-three")
+    ];
+
+    let selectedButton = answerButtons[answerIndex];
+    let isCorrect = selectedButton.getAttribute("data-correct") === "true";
+
+    if (isCorrect) {
+        alert("Correct!");
+    } else {
+        alert("Wrong!");
+    }
+
+    // Disable all buttons after selection
+    answerButtons.forEach(button => button.disabled = true);
+
+    // Display another random question after a short delay
+    setTimeout(displayRandomQuestion, 1000);
+}
