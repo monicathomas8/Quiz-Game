@@ -108,6 +108,8 @@ main {
     text-align: center;
     color: azure;
     letter-spacing: 3px;
+    font-weight: 700;
+    
 }
 
 .cover-text > h2, .cover-text > h3 {
