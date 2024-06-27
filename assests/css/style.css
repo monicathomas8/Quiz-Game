@@ -197,7 +197,21 @@ footer a {
     text-decoration: none;
     color: inherit;
 }
+/* Game Timer Styles */
+.game-timer {
+    text-align: center;
+    margin-top: 20px;
+}
 
+#timer {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
 /* Media Queries */
 @media screen and (min-width: 768px) {
     nav {
