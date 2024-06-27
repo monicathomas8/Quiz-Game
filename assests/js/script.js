@@ -96,6 +96,7 @@ var myQuestions = [
 ]
 // Current question index
 let currentQuestionIndex = 0;
+let timerInterval; // Variable to hold the interval for the timer
 
 // Function to start the game
 function startGame() {
@@ -108,6 +109,8 @@ function startGame() {
         document.getElementById("pp").textContent = myQuestions[currentQuestionIndex].question;
         // Show the answers for the first question
         showAnswers();
+        // Start the timer
+        startTimer();
     }
 }
 
@@ -115,7 +118,38 @@ function startGame() {
 function endGame() {
     alert("See ya soon!!");
     console.log("Left game");
+    // Stop the timer
+    clearInterval(timerInterval);
     window.location.href = "feedback.html";
+}
+
+// Function to start the timer
+function startTimer() {
+    let timeLimit = 300; // Time limit in seconds (5 minutes)
+    const timerDisplay = document.getElementById("timer");
+
+    // Display initial timer value
+    timerDisplay.textContent = formatTime(timeLimit);
+
+    // Update the timer every second
+    timerInterval = setInterval(() => {
+        timeLimit--;
+        timerDisplay.textContent = formatTime(timeLimit);
+
+        // Check if time is up
+        if (timeLimit <= 0) {
+            clearInterval(timerInterval);
+            alert("Time's up!");
+            endGame(); // End the game when time is up
+        }
+    }, 1000); // Update every second (1000 milliseconds)
+}
+
+// Function to format time in MM:SS format
+function formatTime(seconds) {
+    let minutes = Math.floor(seconds / 60);
+    let remainingSeconds = seconds % 60;
+    return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
 }
 
 // Function to display the current question
@@ -161,6 +195,7 @@ function check(selectedAnswerIndex) {
         showQuestion();
         showAnswers();
     } else {
+        clearInterval(timerInterval); // Stop the timer at the end of the quiz
         alert("Quiz over!");
         // You can add more actions here, like showing the final score or restarting the quiz
     }
