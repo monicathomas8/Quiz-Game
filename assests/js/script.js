@@ -99,21 +99,28 @@ let currentQuestionIndex = 0;
 let timerInterval; // Variable to hold the interval for the timer
 let wrongAnswers = 0; //variable to hold number of wrong answers
 
-// Function to start the game
-function startGame() {
+function createName (){
     let name = prompt("What's your name?");
     console.log("Player is ready");
+    console.log(name);
     if (name != null) {
-        // Display the first question
+    document.getElementById("pp").innerHTML = "Hi " + name +", good luck!";
+    startGame();
+}
+}
+
+// Function to start the game
+function startGame() {
+    
+        // Display the first question start timer and questions
+        document.getElementById("question").textContent = myQuestions[currentQuestionIndex].question;
         showQuestion();
-        // Replace initial greeting with the first question
-        document.getElementById("pp").textContent = myQuestions[currentQuestionIndex].question;
         // Show the answers for the first question
         showAnswers();
         // Start the timer
         startTimer();
     }
-}
+
 
 // Function to end the game
 function endGame() {
@@ -209,7 +216,9 @@ function check(selectedAnswerIndex) {
 }
 
 // Event listener for the "I'm Ready" button
-document.getElementById("btns").addEventListener("click", startGame);
+document.getElementById("btns").addEventListener("click", createName);
 
 // Event listener for the "Quit" button
 document.getElementById("btnl").addEventListener("click", endGame);
+
+document.getElementById("pp").addEventListener()
