@@ -190,7 +190,7 @@ function check(selectedAnswerIndex) {
         alert("Wrong!");
         wrongAnswers++;
         // End game if wrong answers reach 2
-        if (wrongAnswers >= 2) {
+        if (wrongAnswers = 2) {
             clearInterval(countdown);
             endGame();
             return;
