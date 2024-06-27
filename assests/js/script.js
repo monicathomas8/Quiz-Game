@@ -355,38 +355,35 @@ var myQuestions = [
         correctAnswer: 'b'
     },
 ]
-// Current question index
-let currentQuestionIndex = 0;
-
-// Function to start the quiz
-function startQuiz() {
-    // Replace initial message with the first question
-    showQuestion();
-}
-
-// Function to display the current question and answers
+// Function to display the current question
 function showQuestion() {
     const questionElement = document.getElementById("question");
-    const answerButtons = document.querySelectorAll("#answers button");
-
-    const currentQuestion = questions[currentQuestionIndex];
+    const currentQuestion = myQuestions[currentQuestionIndex];
     
     // Display the question
     questionElement.textContent = currentQuestion.question;
+}
 
+// Function to display the current answers
+function showAnswers() {
+    const answerButtons = document.querySelectorAll("#answers button");
+    const currentQuestion = myQuestions[currentQuestionIndex];
+    
     // Display the answer options
+    let answerKeys = Object.keys(currentQuestion.answers);
     answerButtons.forEach((button, index) => {
-        button.textContent = currentQuestion.answers[index];
+        button.textContent = currentQuestion.answers[answerKeys[index]];
         button.disabled = false;
     });
 }
 
 // Function to check the selected answer
 function check(selectedAnswerIndex) {
-    const currentQuestion = questions[currentQuestionIndex];
-
+    const currentQuestion = myQuestions[currentQuestionIndex];
+    let answerKeys = Object.keys(currentQuestion.answers);
+    
     // Check if the selected answer is correct
-    if (selectedAnswerIndex === currentQuestion.correct) {
+    if (answerKeys[selectedAnswerIndex] === currentQuestion.correctAnswer) {
         alert("Correct!");
     } else {
         alert("Wrong!");
@@ -394,8 +391,9 @@ function check(selectedAnswerIndex) {
 
     // Move to the next question or end the quiz
     currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
+    if (currentQuestionIndex < myQuestions.length) {
         showQuestion();
+        showAnswers();
     } else {
         alert("Quiz over!");
         // You can add more actions here, like showing the final score or restarting the quiz
@@ -403,4 +401,7 @@ function check(selectedAnswerIndex) {
 }
 
 // Event listener for the "I'm Ready" button
-document.getElementById("btns").addEventListener("click", startQuiz);
+document.getElementById("btns").addEventListener("click", startGame);
+
+// Event listener for the "Quit" button
+document.getElementById("btnl").addEventListener("click", endGame);
