@@ -355,54 +355,52 @@ var myQuestions = [
         correctAnswer: 'b'
     },
 ]
-// Function to pull a random question and display it
-function displayRandomQuestion() {
-    // Get a random question from the array
-    let randomIndex = Math.floor(Math.random() * myQuestions.length);
-    let question = myQuestions[randomIndex];
+// Current question index
+let currentQuestionIndex = 0;
 
-    // Get the question and answer elements
-    let questionContainer = document.getElementById("question");
-    let answerButtons = [
-        document.getElementById("answer-one"),
-        document.getElementById("answer-two"),
-        document.getElementById("answer-three")
-    ];
-
-    // Display the question
-    questionContainer.innerHTML = question.question;
-
-    // Get the answers
-    let answers = Object.values(question.answers);
-
-    // Display the answer options as buttons
-    for (let i = 0; i < answerButtons.length; i++) {
-        answerButtons[i].innerHTML = answers[i];
-        answerButtons[i].disabled = false;
-        answerButtons[i].setAttribute("data-correct", answers[i] === question.answers[question.correctAnswer]);
-    }
+// Function to start the quiz
+function startQuiz() {
+    // Replace initial message with the first question
+    showQuestion();
 }
 
-// Function to check the answer
-function check(answerIndex) {
-    let answerButtons = [
-        document.getElementById("answer-one"),
-        document.getElementById("answer-two"),
-        document.getElementById("answer-three")
-    ];
+// Function to display the current question and answers
+function showQuestion() {
+    const questionElement = document.getElementById("question");
+    const answerButtons = document.querySelectorAll("#answers button");
 
-    let selectedButton = answerButtons[answerIndex];
-    let isCorrect = selectedButton.getAttribute("data-correct") === "true";
+    const currentQuestion = questions[currentQuestionIndex];
+    
+    // Display the question
+    questionElement.textContent = currentQuestion.question;
 
-    if (isCorrect) {
+    // Display the answer options
+    answerButtons.forEach((button, index) => {
+        button.textContent = currentQuestion.answers[index];
+        button.disabled = false;
+    });
+}
+
+// Function to check the selected answer
+function check(selectedAnswerIndex) {
+    const currentQuestion = questions[currentQuestionIndex];
+
+    // Check if the selected answer is correct
+    if (selectedAnswerIndex === currentQuestion.correct) {
         alert("Correct!");
     } else {
         alert("Wrong!");
     }
 
-    // Disable all buttons after selection
-    answerButtons.forEach(button => button.disabled = true);
-
-    // Display another random question after a short delay
-    setTimeout(displayRandomQuestion, 1000);
+    // Move to the next question or end the quiz
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+        showQuestion();
+    } else {
+        alert("Quiz over!");
+        // You can add more actions here, like showing the final score or restarting the quiz
+    }
 }
+
+// Event listener for the "I'm Ready" button
+document.getElementById("btns").addEventListener("click", startQuiz);
