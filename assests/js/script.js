@@ -17,9 +17,45 @@ function endGame() {
     window.location.href ="feedback.html";
 }
 
-    let end = document.getElementById("btnl");
-    end.addEventListener('click', endGame);
+let end = document.getElementById("btnl");
+end.addEventListener('click', endGame);
 
+function displayRandomQuestion() {
+    // Get a random question from the array
+    let randomIndex = Math.floor(Math.random() * myQuestions.length);
+    let question = myQuestions[randomIndex];
+
+    // Get the question and answer elements
+    let questionContainer = document.getElementById("question");
+    let answerContainer = document.getElementById("answers");
+
+    // Display the question
+    questionContainer.innerHTML = question.question;
+
+    // Clear previous answers
+    answerContainer.innerHTML = '';
+
+    // Display the answer options
+    for (let key in question.answers) {
+        let answerButton = document.createElement("button");
+        answerButton.classList.add("answer-button");
+        answerButton.innerHTML = question.answers[key];
+        answerButton.onclick = function() {
+            checkAnswer(key, question.correctAnswer);
+        };
+        answerContainer.appendChild(answerButton);
+    }
+}
+
+// Function to check the answer
+function checkAnswer(selected, correct) {
+    if (selected === correct) {
+        alert("Correct!");
+    } else {
+        alert("Wrong!");
+    }
+    displayRandomQuestion(); // Display another random question
+}
 
 var myQuestions = [
     {
