@@ -345,9 +345,12 @@ function startGame() {
     let name = prompt("What's your name?");
     console.log("Player is ready");
     if (name != null) {
-        document.getElementById("pp").innerHTML = "Hello " + name + ", let's get started!";
-        // Start the quiz
-        startQuiz();
+        // Display the first question
+        showQuestion();
+        // Replace initial greeting with the first question
+        document.getElementById("pp").textContent = myQuestions[currentQuestionIndex].question;
+        // Show the answers for the first question
+        showAnswers();
     }
 }
 
@@ -356,14 +359,6 @@ function endGame() {
     alert("See ya soon!!");
     console.log("Left game");
     window.location.href = "feedback.html";
-}
-
-// Function to start the quiz
-function startQuiz() {
-    // Show the first question
-    showQuestion();
-    // Show the answers for the first question
-    showAnswers();
 }
 
 // Function to display the current question
