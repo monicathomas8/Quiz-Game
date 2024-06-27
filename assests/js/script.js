@@ -97,6 +97,7 @@ var myQuestions = [
 // Current question index
 let currentQuestionIndex = 0;
 let timerInterval; // Variable to hold the interval for the timer
+let wrongAnswers = 0; //variable to hold number of wrong answers
 
 // Function to start the game
 function startGame() {
@@ -187,6 +188,13 @@ function check(selectedAnswerIndex) {
         alert("Correct!");
     } else {
         alert("Wrong!");
+        wrongAnswers++;
+        // End game if wrong answers reach 2
+        if (wrongAnswers >= 2) {
+            clearInterval(countdown);
+            endGame();
+            return;
+        }
     }
 
     // Move to the next question or end the quiz
