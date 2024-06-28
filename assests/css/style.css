@@ -145,7 +145,7 @@ main {
 .start-button, #answers button {
     height: 55px;
     width: 190px;
-    padding: auto;
+    padding: 10px;
     border: 2px solid black;
     border-radius: 6px;
     box-shadow: 2px 2px 10px rgb(187, 171, 131);
