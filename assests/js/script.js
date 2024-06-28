@@ -1,6 +1,5 @@
-
-let start = document.getElementById("btns");
-let end = document.getElementById("btnl");
+document.getElementById("btns").addEventListener("click", createName);
+document.getElementById("btnl").addEventListener("click", endGame);
 
 var myQuestions = [
     {
@@ -78,8 +77,8 @@ var myQuestions = [
     {
         question : "What does Chandler do for a living at the start of the series?",
         answers: {
-            a: "He works in statistical analysis and data reconfiguration.",
-            b: "He works in number data and analysis.",
+            a: "He works in statistical analysis and data reconfiguration",
+            b: "He works in number data and analysis",
             c: "He works in diagnostic analysis and data reform",
         },
         correctAnswer: 'a'
@@ -132,9 +131,9 @@ var myQuestions = [
     {
         question : "What food does Ross claim he invented in college?",
         answers: {
-            a: "The holiday sandwich.",
-            b: "The gravy maker sandwich.",
-            c: "The moist maker sandwich.",
+            a: "The holiday sandwich",
+            b: "The gravy maker sandwich",
+            c: "The moist maker sandwich",
         },
         correctAnswer: 'c'
     },
@@ -231,9 +230,9 @@ var myQuestions = [
     {
         question : "What is the name of the girl Ross dated whonshaved her hair off?",
         answers: {
-            a: "Ronni",
+            a: "Ronnie",
             b: "Bonnie",
-            c: "abby",
+            c: "Abbie",
         },
         correctAnswer: 'b'
     },
@@ -271,7 +270,7 @@ var myQuestions = [
             b: "5",
             c: "3",
         },
-        correctAnswer: '4'
+        correctAnswer: 'a'
     },
     {
         question : "How many boyfriends did Monica have in the show?",
@@ -303,9 +302,9 @@ var myQuestions = [
     {
         question : "How long did Ross do Karate for?",
         answers: {
-            a: "2",
-            b: "3",
-            c: "4",
+            a: "2 years",
+            b: "3 years",
+            c: "4 years",
         },
         correctAnswer: 'b'
     },  
@@ -316,14 +315,14 @@ var myQuestions = [
             b: "15",
             c: "16",
         },
-        correctAnswer: '14'
+        correctAnswer: 'a'
     },
     {
         question : "What is Joey's favorite food?",
         answers: {
-            a: "sandwiches",
-            b: "pizza",
-            c: "jam",
+            a: "Sandwiches",
+            b: "Pizza",
+            c: "All foods",
         },
         correctAnswer: 'a'
     },
@@ -439,6 +438,7 @@ function check(selectedAnswerIndex) {
     // Check if the selected answer is correct
     if (selectedAnswerKey === currentQuestion.correctAnswer) {
         alert("Correct!");
+        answerScore();
     } else {
         alert("Sorry, you've been bamboozled!");
         console.timeLog("name" + "answer time");
@@ -453,11 +453,15 @@ function check(selectedAnswerIndex) {
     } else {
         alert("Woohoo! you did it!");
         console.timeLog("answer time");
+        clearInterval(timerInterval);
+        endGame();
+
         // You can add more actions here, like showing the final score or restarting the quiz
     }
 
 }
 
-document.getElementById("btns").addEventListener("click", createName);
-document.getElementById("btnl").addEventListener("click", endGame);
-
+function answerScore() {
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
+}
