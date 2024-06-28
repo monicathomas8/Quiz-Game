@@ -1,3 +1,4 @@
+
 document.getElementById("btns").addEventListener("click", createName);
 document.getElementById("btnl").addEventListener("click", endGame);
 
