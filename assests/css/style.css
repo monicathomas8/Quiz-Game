@@ -88,7 +88,7 @@ main {
 .sofa {
     height: fit-content;
     width: 100%;
-    background: url("../images/centralperk.jpg") no-repeat center center/cover;
+    background: url("../images/centralperk.jpg") repeat center ;
     position: relative;
 }
 
@@ -108,8 +108,8 @@ main {
     font-weight: 700;
 }
 
-.cover-text > h2, .cover-text > h3 {
-    color: azure;
+.hall-of-fame> h2, .hall-of-fame> h3 {
+    color: black;
     padding: 20px;
 }
 
@@ -125,8 +125,10 @@ main {
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 10px;
     text-align: center;
     letter-spacing: 4px;
+    
     text-transform: uppercase;
 }
 
@@ -192,12 +194,10 @@ footer a {
     color: inherit;
 }
 /* Game Timer Styles */
-.game-timer {
-    text-align: center;
-    margin-top: 20px;
-}
 
 #timer {
+    text-align: center;
+    margin-top: 20px;
     font-size: 1em;
     font-weight: bold;
     color: white;
