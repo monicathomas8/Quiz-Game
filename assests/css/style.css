@@ -181,6 +181,11 @@ main {
    text-decoration: none;
 }
 
+.giphy-embed {
+    width: auto;
+    height: auto;   
+}
+
 /* Footer Styles */
 footer {
     background-color: darkgoldenrod;
