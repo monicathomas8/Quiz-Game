@@ -93,6 +93,249 @@ var myQuestions = [
         },
         correctAnswer: 'b'
     },
+    {
+        question : "What kind of Amenial is Marcel",
+        answers: {
+            a: "A capuchin monkey",
+            b: "A squirrel monkey",
+            c: "A panamanian white-faced monkey",
+        },
+        correctAnswer: 'a'
+    },
+    {
+        question : "Who did Phobie marry at the end of the series?",
+        answers: {
+            a: "Mike Hannigan",
+            b: "Mike Hanson",
+            c: "Mike Harris",
+        },
+        correctAnswer: 'a'
+    },
+    {
+        question : "What is the name of Joey's agent?",
+        answers: {
+            a: "Estelle Logan",
+            b: "Estelle Leon",
+            c: "Estelle Leonard",
+        },
+        correctAnswer: 'c'
+    },
+    {
+        question : "Where did Rachel and Ross have their first kiss?",
+        answers: {
+            a: "Monica's appartment",
+            b: "Central Perk",
+            c: "At the museum",
+        },
+        correctAnswer: 'b'
+    },
+    {
+        question : "What food does Ross claim he invented in college?",
+        answers: {
+            a: "The holiday sandwich.",
+            b: "The gravy maker sandwich.",
+            c: "The moist maker sandwich.",
+        },
+        correctAnswer: 'c'
+    },
+    {
+        question : "Where does Chandler tell Janice he is moving to avoid seeing her again?",
+        answers: {
+            a: "Ukraine",
+            b: "Yemen",
+            c: "Kenya",
+        },
+        correctAnswer: 'b'
+    },
+    {
+        question : "What name appears on the TV guide that Chandler and Joey receive?",
+        answers: {
+            a: "Miss Chandler Bing",
+            b: "Mrs Chandler Bong",
+            c: "Miss Chandler Bong",
+        },
+        correctAnswer: 'c'
+    },
+    {
+        question : "Which of Joey's sisters did Chandler kiss?",
+        answers: {
+            a: "Mary Angela",
+            b: "Marie Angela",
+            c: "Macie Angie",
+        },
+        correctAnswer: 'a'
+    },
+    {
+        question : "What was the name of Monica's senior prom date who got drunk and passed out in the bathroom?",
+        answers: {
+            a: "Roy Gubilk",
+            b: "Roy Goodburk",
+            c: "Roy Goodman",
+        },
+        correctAnswer: 'a'
+    },
+    {
+        question : "What fruit is Ross allergic to?",
+        answers: {
+            a: "Lemon",
+            b: "Mango",
+            c: "Kiwi",
+        },
+        correctAnswer: 'c'
+    },
+    {
+        question : "Whats was the name of Joey's boat?",
+        answers: {
+            a: "The Mr. Boamont",
+            b: "The Mr. Beaumont",
+            c: "The Mr. beamont",
+        },
+        correctAnswer: 'b'
+    },
+    {
+        question : "Who was Monica's first boyfriend on the show?",
+        answers: {
+            a: "Paul",
+            b: "Steve",
+            c: "Brian",
+        },
+        correctAnswer: 'a'
+    },
+    {
+        question : "What is Phobies fake name?",
+        answers: {
+            a: "Regina-lee Pangee",
+            b: "Regina Flangie",
+            c: "Regina Phalange",
+        },
+        correctAnswer: 'c'
+    },
+    {
+        question : "Who is Ross's first wife?",
+        answers: {
+            a: "Carol Wick",
+            b: "Carol Willick",
+            c: "Carol Wicks",
+        },
+        correctAnswer: 'b'
+    },
+    {
+        question : "Whats the name of joey's character in his World War 1 movie?",
+        answers: {
+            a: "Mac Machiavelli",
+            b: "Mike Machiavelli",
+            c: "Mark Machiavelli",
+        },
+        correctAnswer: 'a'
+    },
+    {
+        question : "What is the name of the girl Ross dated whonshaved her hair off?",
+        answers: {
+            a: "Ronni",
+            b: "Bonnie",
+            c: "abby",
+        },
+        correctAnswer: 'b'
+    },
+    {
+        question : "What was the profession of Rachel's ex-fiance?",
+        answers: {
+            a: "Dentist",
+            b: "Orthodontist",
+            c: "Endodontist",
+        },
+        correctAnswer: 'b'
+    },
+    {
+        question : "How many years was Ross married to Carol",
+        answers: {
+            a: "7",
+            b: "8",
+            c: "9",
+        },
+        correctAnswer: 'c'
+    },
+    {
+        question : "How much does Monica get charged for returning a late rental video?",
+        answers: {
+            a: "$4",
+            b: "$5",
+            c: "$6",
+        },
+        correctAnswer: 'c'
+    },
+    {
+        question : "How many times does Chandler date Janice?",
+        answers: {
+            a: "4",
+            b: "5",
+            c: "3",
+        },
+        correctAnswer: '4'
+    },
+    {
+        question : "How many boyfriends did Monica have in the show?",
+        answers: {
+            a: "7",
+            b: "9",
+            c: "6",
+        },
+        correctAnswer: 'b'
+    },
+    {
+        question : "How many dates does Rachel go on in the show?",
+        answers: {
+            a: "19",
+            b: "18",
+            c: "17",
+        },
+        correctAnswer: 'a'
+    },
+    {
+        question : "Who was the longest guest star on the show?",
+        answers: {
+            a: "James Michael Tyler",
+            b: "Bruce Willis",
+            c: "Helen Baxendale",
+        },
+        correctAnswer: 'a'
+    },
+    {
+        question : "How long did Ross do Karate for?",
+        answers: {
+            a: "2",
+            b: "3",
+            c: "4",
+        },
+        correctAnswer: 'b'
+    },  
+    {
+        question : "How many significant dates does Ross have in the show?",
+        answers: {
+            a: "14",
+            b: "15",
+            c: "16",
+        },
+        correctAnswer: '14'
+    },
+    {
+        question : "What is Joey's favorite food?",
+        answers: {
+            a: "sandwiches",
+            b: "pizza",
+            c: "jam",
+        },
+        correctAnswer: 'a'
+    },
+    {
+        question : "Who sang the theme song of the show?",
+        answers: {
+            a: "The Ronnies",
+            b: "The Rembrandts",
+            c: "U2",
+        },
+        correctAnswer: 'b'
+    },
 ]
 // Current question index
 let currentQuestionIndex = 0;
@@ -134,7 +377,7 @@ function endGame() {
 
 // Function to start the timer
 function startTimer() {
-    let timeLimit = 210;
+    let timeLimit = 300;
     const timerDisplay = document.getElementById("timer");
     console.time("answer time");
 
@@ -150,7 +393,8 @@ function startTimer() {
         if (timeLimit <= 0) {
             clearInterval(timerInterval);
             alert("Time's up!");
-            youLose(); // End the game when time is up
+            console.timeLog("answer time");
+            youLose();
         }
     }, 1000); // Update every second (1000 milliseconds)
 }
@@ -197,6 +441,7 @@ function check(selectedAnswerIndex) {
         alert("Correct!");
     } else {
         alert("Sorry, you've been bamboozled!");
+        console.timeLog("name" + "answer time");
         youLose();  
     }
 
@@ -210,7 +455,7 @@ function check(selectedAnswerIndex) {
         console.timeLog("answer time");
         // You can add more actions here, like showing the final score or restarting the quiz
     }
-    
+
 }
 
 document.getElementById("btns").addEventListener("click", createName);
