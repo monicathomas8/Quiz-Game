@@ -16,7 +16,7 @@ body {
     color: black;
 }
 
-h1, h2, h3 {
+h1 {
     font-family: "Long Cang", cursive;
     letter-spacing: 2px;
     color: black;
@@ -39,12 +39,6 @@ header {
 header a {
     text-decoration: none;
     color: inherit;
-}
-
-h1 {
-    font-family: "Long Cang", cursive;
-    letter-spacing: 2px;
-    color: black;
 }
 
 /* Navigation Styles */
@@ -165,7 +159,7 @@ main {
     margin-bottom: 10px;
 }
 
-.start-button:hover, #answers button:hover {
+.start-button:hover  {
     background-color: white;
 }
 

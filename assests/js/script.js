@@ -188,7 +188,7 @@ var myQuestions = [
         answers: {
             a: "The Mr. Boamont",
             b: "The Mr. Beaumont",
-            c: "The Mr. beamont",
+            c: "The Mr. Beamont",
         },
         correctAnswer: 'b'
     },
