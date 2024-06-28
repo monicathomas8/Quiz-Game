@@ -105,7 +105,6 @@ main {
     text-transform: uppercase;
     bottom: 40%;
     width: 100%;
-    min-height: auto;
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
@@ -122,7 +121,7 @@ main {
 
 .hall-of-fame {
     background-color: darkgoldenrod;
-    font-size: 140%;
+    font-size: 110%;
     font-weight: 700;
     color: black;
     position: relative;
@@ -155,7 +154,7 @@ main {
     border: 2px solid black;
     border-radius: 6px;
     box-shadow: 2px 2px 10px rgb(187, 171, 131);
-    font-size: 16px;
+    font-size: 15px;
     background-color: rgb(187, 171, 131);
     color: black;
     font-weight: 700;
@@ -176,7 +175,8 @@ main {
 }
 
 #question {
-    font-size: 1.5em;
+    font-size: 110%;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
@@ -204,7 +204,7 @@ footer a {
 }
 
 #timer {
-    font-size: 2em;
+    font-size: 1em;
     font-weight: bold;
     color: white;
     background-color: rgba(0, 0, 0, 0.7);

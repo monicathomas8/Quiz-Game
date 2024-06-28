@@ -85,7 +85,7 @@ var myQuestions = [
         correctAnswer: 'a'
     },
     {
-        question : "Who was Monica's first kiss ever?",
+        question : "Who was Monica's first kiss, ever?",
         answers: {
             a: "Chandler",
             b: "Ross",
@@ -94,7 +94,7 @@ var myQuestions = [
         correctAnswer: 'b'
     },
     {
-        question : "What kind of Amenial is Marcel",
+        question : "What kind of animal is Marcel?",
         answers: {
             a: "A capuchin monkey",
             b: "A squirrel monkey",
