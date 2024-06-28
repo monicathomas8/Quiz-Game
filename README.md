@@ -46,6 +46,7 @@ When I deployed my project to GitHub, there was an issue with my one of my CSS c
 <h2>Validator Testing</h2>
 HTML – No errors were found when passing through the official W3C validator.
 CSS – No errors were found when passing through the official (Jigsaw) validator.
+JavaScript - passed with no significant issuess using JShint.
 Accessibility – Colours and fonts are easy to read and accessible. The performance is slowed down due to the background image. I did reduce the size of the photo and this improved the performance score. I confirmed this by running through lighthouse in devtools.
 <img src="assests/images/lighthouse.png">
 

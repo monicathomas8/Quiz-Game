@@ -336,11 +336,11 @@ var myQuestions = [
         },
         correctAnswer: 'b'
     },
-]
-// Current question index
+];
+
 let currentQuestionIndex = 0;
-let timerInterval; // Variable to hold the interval for the timer
-let wrongAnswers = 0; //variable to hold number of wrong answers
+let timerInterval; 
+let wrongAnswers = 0; 
 
 function createName (){
     let name = prompt("What's your name?");
@@ -352,7 +352,7 @@ function createName (){
 }
 }
 
-// Function to start the game
+
 function startGame() {
     
         // Display the first question start timer and questions
