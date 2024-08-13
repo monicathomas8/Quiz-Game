@@ -1,7 +1,7 @@
 
 document.getElementById("btns").addEventListener("click", createName);
 document.getElementById("btnl").addEventListener("click", endGame);
-
+// questions for the quiz
 var myQuestions = [
     {
         question : "what are the names of Ross and Monica's parents?",
@@ -342,6 +342,7 @@ let currentQuestionIndex = 0;
 let timerInterval; 
 let wrongAnswers = 0; 
 
+// function for the user to create a username
 function createName (){
     let name = prompt("What's your name?");
     console.log("Player is ready");
@@ -363,6 +364,7 @@ function startGame() {
         // Start the timer
         startTimer();
     }
+// function which ends the game, clears the timer and takes user to a different page
 function youLose(){
     clearInterval(timerInterval);
     window.location.href="rules.html";
@@ -457,7 +459,7 @@ function check(selectedAnswerIndex) {
         clearInterval(timerInterval);
         endGame();
 
-        // You can add more actions here, like showing the final score or restarting the quiz
+        // add more actions here, like showing the final score or restarting the quiz
     }
 
 }
