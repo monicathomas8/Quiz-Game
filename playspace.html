@@ -38,13 +38,14 @@
     <section>
         <div class="hall-of-fame">
             <h6>Are you a true fan? Play the game to find out!</h6>
-            <div class="button-group">
+            <div class="button-group"> <!-- buttons to start ther game-->
                 <span><button class="start-button" id="btns">I'm Ready</button></span>
                 <span><button class="start-button" id="btnl"><i class="fa-solid fa-person-walking-arrow-right"></i>Quit</button></span>
                 <p id="pp"></p>
                 <div id="question-container">
-                    <p id="question"></p>
+                    <p id="question"></p> <!-- user input will display here-->
                     <div id="answers" class="button-group">
+                        <!-- once game has started the questions will appear in the buttons-->
                         <button id="answer-one" onclick="check(0)" disabled></button>
                         <button id="answer-two" onclick="check(1)" disabled></button>
                         <button id="answer-three" onclick="check(2)" disabled></button>

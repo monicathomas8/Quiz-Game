@@ -51,7 +51,19 @@ Accessibility – Colours and fonts are easy to read and accessible. The perform
 <img src="assests/images/lighthouse.png">
 
 <h2>Deployment</h2>
-The site was deployed to GitHub pages. The live link can be found here – <a href="https://monicathomas8.github.io/quiz-game-p2/"  target="_blank">FRIENDS QUIZ</a>
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+<ul>
+<li>In the GitHub repository, navigate to the 'settings' tab.</li>
+<li>From the menu on the left, navigate to 'pages'.</li>
+<li>Within 'pages', under 'Build and Deployment' the source should be 'Deploy from a branch'.</li>
+<li>Underneath, the branch should be set to 'main' and the file 'root'.</li>
+<li>Now click 'save'. The website is being deployed.</li>
+<li>Click on the 'code' tab of your repository </li>
+<li>On the right, find Environments and click 'GitHub-Pages'.</li>
+<li>From the new open page, click 'view deployment'.</li>
+</ul>
+
+The live link can be found here – <a href="https://monicathomas8.github.io/quiz-game-p2/"  target="_blank">FRIENDS QUIZ</a>
 
 <h2>Credits</h2>
 Content – the content, idea and code to make the project was created be myself. I had help with building the structure of some functions in my code and problem solving with my peer George Small. I also use Kevin Powell on YouTube to help problem solve.
