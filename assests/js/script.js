@@ -7,7 +7,7 @@ var myQuestions = [
         question : "what are the names of Ross and Monica's parents?",
         answers:{
             a: "Jack and Judy Geller",
-            b: "jack and Judy Gellar",
+            b: "Jack and Judy Gellar",
             c: "Jake and Jude Galler",
         },
         correctAnswer: 'a'
@@ -16,8 +16,8 @@ var myQuestions = [
         question : "What is Joey's famous pick up line?",
         answers:{
             a: "How you doing?",
-            b: "hows you doing?",
-            c: "how you doin'?",
+            b: "Hows you doing?",
+            c: "How you doin'?",
         },
         correctAnswer: 'c'
     },
@@ -76,11 +76,11 @@ var myQuestions = [
         correctAnswer: 'b'
     },
     {
-        question : "What does Chandler do for a living at the start of the series?",
+        question : "What was Chandler's job at the start of the series?",
         answers: {
-            a: "He works in statistical analysis and data reconfiguration",
-            b: "He works in number data and analysis",
-            c: "He works in diagnostic analysis and data reform",
+            a: "Statistical analysis & data reconfiguration",
+            b: "Number data & analysis",
+            c: "Diagnostic analysis & data reform",
         },
         correctAnswer: 'a'
     },
