@@ -343,16 +343,17 @@ let timerInterval;
 let wrongAnswers = 0; 
 
 // function for the user to create a username
-function createName (){
-    let name = prompt("What's your name?");
-    console.log("Player is ready");
+function createName () {
+let name = prompt("What's your name?")
+if (name === "" || name === null) {
+    alert("please enter a valid name");
+} else {
+    console.log("player is ready");
     console.log(name);
-    if (name != null) {
-    document.getElementById("pp").innerHTML = "Hi " + name +", good luck!";
+    document.getElementById("pp").innerHTML = "Hi " + name + ", good luck!";
     startGame();
 }
-}
-
+}     
 
 function startGame() {
     
