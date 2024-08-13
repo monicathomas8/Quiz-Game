@@ -345,6 +345,7 @@ let wrongAnswers = 0;
 // function for the user to create a username
 function createName () {
 let name = prompt("What's your name?")
+// checks user input for an empty string
 if (name === "" || name === null) {
     alert("please enter a valid name");
 } else {
