@@ -1,6 +1,10 @@
 <h1>Friends Quiz</h1>
 
-<p>This Friends Quiz website is a simple fun past time quiz based on the TV show Friends. Users can past time with some easy going fun while testing their knowledge of the show and characters. The site is targeted toward fans of the show and people who think they know there is to know about the show.</p>
+<p>This Friends Quiz website is a simple easy way to keep users entertained while pasting time with a Challenging quiz, based on the TV show Friends. 
+<br>
+Users can test their knowledge of the show and characters against a 5 minute timer. 
+<br>
+The site is targeted toward fans of the show and people who think they know there is to know about the show.</p>
 
 <h2>Features</h2>
 <h3>Navigation</h3>
