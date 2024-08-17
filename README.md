@@ -1,10 +1,8 @@
 <h1>Friends Quiz</h1>
 
 <p>This Friends Quiz website is a simple easy way to keep users entertained while pasting time with a Challenging quiz, based on the TV show Friends. 
-<br>
-Users can test their knowledge of the show and characters against a 5 minute timer. 
-<br>
-The site is targeted toward fans of the show and people who think they know there is to know about the show.</p>
+Users can test their knowledge of the show and characters against a 5 minute timer. The site is targeted toward fans of the TV show and people who think they show buffs. 
+The game is perfect for someone with a short amount of time to kill or people who are looking for an easy going short distraction.</p>
 
 <h2>Features</h2>
 <h3>Navigation</h3>
@@ -40,8 +38,8 @@ The feedback page has a fun Gif fans of the TV show will understand. It is in th
 <h2>Testing</h2>
 I have tested the site on different browsers; Chrome, Safari, Microsoft Edge.
 I can confirm that the project is responsive, looks tidy and functions on all standard screen sizes using the devtools device toolbar.
-The navigation, header, hall of fame, rules, play and feedback text are all readable and easy to understand.
-All links load, input fields and buttons are functional. 
+The navigation, header, hall of fame, rules, play and feedback text are all readable and easy to understand. I had multiple people text the website and play the game on different devise types and screen sizes. The overall feedback was as follows: The design of the website is easy to understand and how to play the game. Most people found it addictive and wanted to finish the questions and played multiple times before completing the quiz. 
+
 
 <h2>Bugs</h2>
 <h3>Solved bugs / Unsolved bugs</h3>
@@ -79,6 +77,6 @@ Google Fonts to create a Friends TV show feel.
 I used Pexels for the one image of the Friends TV set. The link is here:
 Photo by Clément Proust from Pexels: https://www.pexels.com/photo/studio-warner-de-la-serie-tv-friends-15700348/
 	
-<h2>Final Thoughts</h2>
+<h2>Final Thoughts / Future Development</h2>
 If I had more time, I would of liked to linked the user score to the Hall of Fame scoreboard, along with their time.  I also would of like to have more pop art style pictures for the background. However, they were not free to download. I would of like to have more questions and created a random loop. But it throws up a few bugs and I was short on time to problem solve. Overall, I am pleased with the outcome and the feedback I have had is positive and testers found the game addictive and entertaining. I hope you find it enjoyable, thank you.
  -Monica. 
