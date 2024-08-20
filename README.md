@@ -68,7 +68,7 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 The live link can be found here – <a href="https://monicathomas8.github.io/quiz-game-p2/"  target="_blank">FRIENDS QUIZ</a>
 
 <h2>Credits</h2>
-Content – the content, idea and code to make the project was created be myself. I had help with building the structure of some functions in my code and problem solving with my peer George Small. I also use Kevin Powell on YouTube to help problem solve.
+Content – the content, idea and code to make the project was created by myself. I had help with building the structure of some functions in my code and problem solving with my peer George Small. I also use Kevin Powell on YouTube to help problem solve.
 
 <h2>Media</h2>
 I used the following: 
